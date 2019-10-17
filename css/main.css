@@ -1080,6 +1080,9 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
     left: 50%;
     border: 1px solid #ddd;
 }
+.menu-button{
+	font-size: 20px;
+}
 
 @media screen and (max-width:480px) {
     .csstransforms .cn-wrapper {
@@ -1089,6 +1092,10 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
     .cn-button {
         font-size: 1em;
     }
+
+	.menu-button{
+		font-size: 14px;
+	}
 
     .csstransforms .cn-wrapper li {
         font-size: 1.52em;
@@ -1100,6 +1107,10 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
         width: 15.15px;
         margin-left: -7.5em;
     }
+
+	.menu-button{
+		font-size: 12px;
+	}
 
     .no-csstransforms .cn-wrapper li {
         height: 3em;
