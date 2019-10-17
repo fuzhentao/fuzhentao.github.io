@@ -1,1 +1,9 @@
-theme: jekyll-theme-merlot
+highlighter: true
+paginate: 3
+relative_permalinks: false
+permalink: /blog/:year/:month/:day/:title/
+excerpt_separator: <!--more--> 
+paginate_path: "blog/page:num"
+siteurl: http://fatcoder.com
+gems:
+  - jekyll-paginate
