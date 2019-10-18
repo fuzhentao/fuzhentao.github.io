@@ -1,5 +1,5 @@
 highlighter: true
-paginate: 3
+paginate: 4
 relative_permalinks: false
 permalink: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--more-->

@@ -3,7 +3,7 @@ var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "//hm.baidu.com/hm.js?8701375826723deeac8ae97575bb13f2";
-  var s = document.getElementsByTagName("script")[0]; 
+  var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
 
@@ -14,7 +14,7 @@ var duoshuoQuery = {short_name:"fatcoders"};
 		ds.type = 'text/javascript';ds.async = true;
 		ds.src = 'http://static.duoshuo.com/embed.js';
 		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
+		(document.getElementsByTagName('head')[0]
 		|| document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
 
@@ -58,7 +58,7 @@ FATCODERS.superNav = function(){
     }
     function closeNav(){
         open = false;
-        button.innerHTML = "+";
+        button.innerHTML = "<div class='menu-button'>MENU</div>";
         classie.remove(overlay, 'on-overlay');
         classie.remove(wrapper, 'opened-nav');
     }
@@ -120,7 +120,7 @@ FATCODERS.slider = function(){
 FATCODERS.goSection = function(){
 	$('#nextsection').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
-		
+
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
 	});
@@ -133,7 +133,7 @@ FATCODERS.goSection = function(){
 FATCODERS.goUp = function(){
 	$('#goUp').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
-		
+
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
 	});
@@ -177,22 +177,22 @@ FATCODERS.scrollToTop = function(){
 ================================================== */
 
 FATCODERS.utils = function(){
-	
+
 	$('.item-thumbs').bind('touchstart', function(){
 		$(".active").removeClass("active");
       	$(this).addClass('active');
     });
-	
+
 	$('.image-wrap').bind('touchstart', function(){
 		$(".active").removeClass("active");
       	$(this).addClass('active');
     });
-	
+
 	$('#social ul li').bind('touchstart', function(){
 		$(".active").removeClass("active");
       	$(this).addClass('active');
     });
-	
+
 }
 
 /* ==================================================
@@ -201,15 +201,15 @@ FATCODERS.utils = function(){
 
 FATCODERS.accordion = function(){
 	var accordion_trigger = $('.accordion-heading.accordionize');
-	
+
 	accordion_trigger.delegate('.accordion-toggle','click', function(event){
 		if($(this).hasClass('active')){
 			$(this).removeClass('active');
 		   	$(this).addClass('inactive');
 		}
 		else{
-		  	accordion_trigger.find('.active').addClass('inactive');          
-		  	accordion_trigger.find('.active').removeClass('active');   
+		  	accordion_trigger.find('.active').addClass('inactive');
+		  	accordion_trigger.find('.active').removeClass('active');
 		  	$(this).removeClass('inactive');
 		  	$(this).addClass('active');
 	 	}
@@ -223,7 +223,7 @@ FATCODERS.accordion = function(){
 
 FATCODERS.toggle = function(){
 	var accordion_trigger_toggle = $('.accordion-heading.togglize');
-	
+
 	accordion_trigger_toggle.delegate('.accordion-toggle','click', function(event){
 		if($(this).hasClass('active')){
 			$(this).removeClass('active');
@@ -241,7 +241,7 @@ FATCODERS.toggle = function(){
    Tooltip
 ================================================== */
 
-FATCODERS.toolTip = function(){ 
+FATCODERS.toolTip = function(){
     $('a[data-toggle=tooltip]').tooltip();
 }
 
@@ -281,4 +281,3 @@ $(document).ready(function(){
 
 });
 
-  
