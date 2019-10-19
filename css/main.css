@@ -1477,6 +1477,18 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 	height:53px;
 	background:url('../img/new.png') no-repeat;
 }
+#about #timeline .items .item .ibm {
+	display:inline-block;
+	width:53px;
+	height:53px;
+	background:url('../img/ibm.png') no-repeat;
+}
+#about #timeline .items .item .j {
+	display:inline-block;
+	width:53px;
+	height:53px;
+	background:url('../img/j.png') no-repeat;
+}
 #about #timeline .items .item_left .item_content {
 	text-align:right;
 }
